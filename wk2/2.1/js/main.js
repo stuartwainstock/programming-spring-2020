@@ -2,4 +2,4 @@ let favMovies = ['Vegas Vacation', 'City of God', 'Devil Wears Prada', 'Summer C
 
 console.log(favMovies);
 favMovies.push(prompt("What's your favorite movie?"));
-console.log(favMovies);
+console.log(favMovies.toString());
