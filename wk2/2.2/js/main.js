@@ -1,9 +1,10 @@
 const favGames = [
-	{name: 'Poker', type: 'Card', players: '10' },
-	{name: 'Mario Kart', type: 'Video', players:'4' },
-	{name: 'Monopoly', type: 'Board', players: '8' }
+	{name: 'Poker', type: 'card', players: '10' },
+	{name: 'Mario Kart', type: 'video', players:'4' },
+	{name: 'Monopoly', type: 'board', players: '8' }
 ];
 console.log(favGames);
 
-let userSelect = prompt("I have three games in my collection. Pick a number between one and three and I'll tell you about it.");
-console.log(userSelect);
+const userSelectIdx = prompt("I have three games in my collection. Pick a number between 1 and 3 and I'll tell you about it.");
+
+alert('You selected the game ' + favGames[userSelectIdx].name + ' which is a ' + favGames[userSelectIdx].type + ' game for up to ' + favGames[userSelectIdx].players + ' players.');
