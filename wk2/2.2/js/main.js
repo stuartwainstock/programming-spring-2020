@@ -1,5 +1,9 @@
-let favMovies = ['Vegas Vacation', 'City of God', 'Devil Wears Prada', 'Summer Catch', 'Ghost Bird'];
+const favGames = [
+	{name: 'Poker', type: 'Card', players: '10' },
+	{name: 'Mario Kart', type: 'Video', players:'4' },
+	{name: 'Monopoly', type: 'Board', players: '8' }
+];
+console.log(favGames);
 
-console.log(favMovies);
-favMovies.push(prompt("What's your favorite movie?"));
-console.log(favMovies.toString());
+let userSelect = prompt("I have three games in my collection. Pick a number between one and three and I'll tell you about it.");
+console.log(userSelect);
