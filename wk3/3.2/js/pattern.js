@@ -1,11 +1,13 @@
 function setup() {
-	createCanvas(200, 200);
+	createCanvas(600, 600);
   angleMode(DEGREES);
 }
 
-function createTile() {
-  translate(0,0);
+function createTile(originX, originY) {
+  translate(originX, originY);
+  
   fill('#00548D'); //blue
+  noStroke();
   rect(0,0,200,200);
   stroke('#FDBE42');
   strokeWeight(8);
@@ -23,7 +25,16 @@ function createTile() {
 }
 
 function draw(){
-  createTile();
+  createTile(0,0);
+  createTile(0,200);
+  createTile(0,200);
+  createTile(200, -400);
+  createTile(0, 200);
+  createTile(0, 200);
+  createTile(200, -400);
+  createTile(0, 200);
+  createTile(0, 200);
+
   noLoop();
 }  
 
