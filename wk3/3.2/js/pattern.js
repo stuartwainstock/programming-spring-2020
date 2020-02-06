@@ -3,13 +3,13 @@ function setup() {
   angleMode(DEGREES);
 }
 
-function createTile(originX, originY) {
+function createTile(originX, originY, bgColor, emptySquare) {
   translate(originX, originY);
   
-  fill('#00548D'); //blue
+  fill(bgColor); //bgcolor
   noStroke();
   rect(0,0,200,200);
-  stroke('#FDBE42');
+  stroke(emptySquare);
   strokeWeight(8);
   noFill(); 
   rect(25,25,150,150);
@@ -25,15 +25,15 @@ function createTile(originX, originY) {
 }
 
 function draw(){
-  createTile(0,0);
-  createTile(0,200);
-  createTile(0,200);
-  createTile(200, -400);
-  createTile(0, 200);
-  createTile(0, 200);
-  createTile(200, -400);
-  createTile(0, 200);
-  createTile(0, 200);
+  createTile(0,0, '#7ADEDE', '#fff');
+  createTile(0,200, '#FED2C2', '#00548D');
+  createTile(0,200, '#00548D', '#FEBF43');
+  createTile(200, -400, '#FEBF43', '#00548D');
+  createTile(0, 200, '#F54053', '#FED2C2');
+  createTile(0, 200, '#FF4A00', '#00548D');
+  createTile(200, -400, '#151515', '#00548D');
+  createTile(0, 200, '#E5E5E5', '#00548D');
+  createTile(0, 200, '#0091D1', '#151515');
 
   noLoop();
 }  
