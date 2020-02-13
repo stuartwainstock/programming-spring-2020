@@ -3,7 +3,7 @@ const myEmptyDiv = document.querySelector('#myEmptyDiv');
 
 const heading = document.createElement('h1');
 
-heading.innerHTML = 'Testing creating a h1 via the innerHTML';
+heading.innerHTML = 'Llamas do not bite. They spit when they are agitated, but that is mostly at each other.';
 heading.style.cursor = 'pointer';
 heading.addEventListener('click', handleHeadingClick);
 myEmptyDiv.appendChild(heading);
