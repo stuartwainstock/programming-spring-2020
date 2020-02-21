@@ -1,5 +1,4 @@
 let bubble1;
-let bubble2;
 
 class Bubble{
 	constructor(){
@@ -21,14 +20,13 @@ class Bubble{
 function setup(){
 	createCanvas(500,500);
 	bubble1 = new Bubble();
-	bubble2 = new Bubble();
 	print(bubble1.x, bubble1.y);
 }
 
 function draw(){
 	background('#d9761a');
+	for (let j = 0; j < 5; j++){
 	bubble1.move();
 	bubble1.show();
-	bubble2.move();
-	bubble2.show();
+	}
 }
