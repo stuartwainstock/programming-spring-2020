@@ -6,9 +6,17 @@ let cards =[];
 const gameState = {
 
 }
+let cardfaceArray =[];
 let cardback;
 function preload(){
 	cardback = loadImage('img/cardback.jpg');
+	cardfaceArray = [
+		loadImage('img/yellow-o.jpg'),
+		loadImage('img/green-o.jpg'),
+		loadImage('img/blue-o.jpg'),
+		loadImage('img/red-o.jpg'),
+		loadImage('img/orange-o.jpg')
+	]
 }
 function setup(){
 	createCanvas(900, 550);
@@ -16,7 +24,7 @@ function setup(){
 	background('#f91651');
 	for (let j = 0; j < 2; j++){
 		for(let i = 0; i < 5; i++) {
-		cards.push(new Card (startingX, startingY));
+		cards.push(new Card (startingX, startingY, cardfaceArray[0] ));
 		startingX += 150;
 	}
 		startingY += 190;
@@ -28,28 +36,30 @@ function setup(){
 function mousePressed(){
 	for (let k = 0; k < cards.length; k++) {
 		if(cards[k].didHit(mouseX, mouseY)){
-			console.log('flipped');
+			console.log('flipped', cards[k]);
 		}
 	}
 }
 
 class Card{
-	constructor(x, y){
+	constructor(x, y, cardfaceImg){
 		this.x = x;
 		this.y = y;
 		this.width = 125;
 		this.height = 175;
 		this.face = DOWN;
+		this.cardFaceImg = cardfaceImg;
 		this.showCard();
 	}
 	showCard(){ 
 		if(this.face === DOWN){
 			fill('#fff');
-			rect(this.x, this.y, this.width, this.height, 5);
+			rect(this.x, this.y, this.width, this.height);
 			image(cardback, this.x, this.y);
 		} else{
 			fill('#c3c3c3');
-			rect(this.x, this.y, this.width, this.height, 5);
+			rect(this.x, this.y, this.width, this.height);
+			image(this.cardFaceImg, this.x, this.y);
 		}
 		
 	}
