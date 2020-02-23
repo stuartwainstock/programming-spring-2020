@@ -2,7 +2,7 @@ const DOWN = 'down';
 const UP = 'up';
 let startingX = 100;
 let startingY = 60;
-let cards =[];
+let cards = [];
 const gameState = {
 	totalPairs: 5,
 	flippedCards: [],
@@ -10,9 +10,9 @@ const gameState = {
 	attempts: 0,
 	waiting: false
 }
-let cardfaceArray =[];
+let cardfaceArray = [];
 let cardback;
-function preload(){
+function preload() {
 	cardback = loadImage('img/cardback.jpg');
 	cardfaceArray = [
 		loadImage('img/yellow-o.jpg'),
@@ -27,7 +27,7 @@ function setup(){
 	noStroke();
 	let selectedFaces = [];
 	for (let z = 0; z < 5; z++){
-		const randomIdx = floor(random(cardfaceArray.lenght));
+		const randomIdx = floor(random(cardfaceArray.length));
 		const face = cardfaceArray[randomIdx];
 		selectedFaces.push(face);
 		selectedFaces.push(face);
@@ -35,8 +35,8 @@ function setup(){
 		cardfaceArray.splice(randomIdx, 1);
 	}
 	selectedFaces = shuffleArray(selectedFaces);
-	for (let j = 0; j < 2; j++){
-		for(let i = 0; i < 5; i++) {
+	for (let j = 0; j < 2; j++) {
+		for (let i = 0; i < 5; i++) {
 			const faceImage = selectedFaces.pop(); 
 			cards.push(new Card (startingX, startingY, faceImage));
 			startingX += 150;
@@ -49,18 +49,25 @@ function setup(){
 
 function draw (){
 	background('#f91651');
-	if (gameState.numMatched === gameState.totalPairs){
-		fill('yellow');
-		textSize(66);
-		text('you win!!, 400, 425');
+	if (gameState.numMatched === gameState.totalPairs) {
+		fill('#fff');
+		textSize(50);
+		text('Winner Winner', 400, 525);
 		noLoop();
 	}
-	for (let k = 0; k < cards.length; k++){
-		if(!cards[k].isMatch){
-			card[k].faceImage = DOWN;
+	for (let k = 0; k < cards.length; k++) {
+		if (!cards[k].isMatch) {
+			cards[k].face = DOWN;
 		}
-		cards[k].show();
+		cards[k].showCard();
 	}
+	noLoop();
+	gameState.flippedCards.length = 0;
+	gameState.waiting = false;
+	fill(255);
+	textSize(30);
+	text('attempts ' + gameState.attempts, 100, 525);
+	text('matches ' + gameState.numMatched, 100, 475);
 }
 
 function mousePressed(){
@@ -73,8 +80,9 @@ function mousePressed(){
 			gameState.flippedCards.push(cards[k]);
 		}
 	}
-	if (gameState.flippedCards.length === 2){
-		if (gameState.flippedCards[0].faceImage === gameState.flippedCards[1].faceImage){
+	if (gameState.flippedCards.length === 2) {
+		gameState.attempts++;
+		if (gameState.flippedCards[0].cardFaceImg === gameState.flippedCards[1].cardFaceImg){
 			//matched
 			//marked as flipped
 			gameState.flippedCards[0].isMatch = true;
@@ -89,7 +97,7 @@ function mousePressed(){
 			const loopTimeout = window.setTimeout(() => {
 				loop();
 				window.clearTimeout(loopTimeout);
-			}, 1000)
+			}, 500)
 		}
 	}
 }
@@ -127,9 +135,9 @@ class Card{
 		}
 	}
 	flip(){
-		if(this.face === DOWN){
+		if (this.face === DOWN){
 			this.face = UP;
-		} else{
+		} else {
 			this.face = DOWN;
 		}
 		this.showCard();
@@ -139,7 +147,7 @@ function shuffleArray (array) {
 		let counter = array.length;
 		while (counter > 0) {
 			const idx = Math.floor(Math.random() * counter);
-			counter --;
+			counter--;
 			const temp = array[counter];
 			array[counter] = array[idx];
 			array[idx] = temp;
