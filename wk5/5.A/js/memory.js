@@ -22,10 +22,20 @@ function setup(){
 	createCanvas(900, 550);
 	noStroke();
 	background('#f91651');
+	let selectedFaces = [];
+	for (let z = 0; z < 5; z++){
+		const randomIdx = floor(random(cardfaceArray.lenght));
+		const face = cardfaceArray[randomIdx];
+		selectedFaces.push(face);
+		selectedFaces.push(face);
+		//removed the used cardface
+		cardfaceArray.splice(randomIdx, 1);
+	}
 	for (let j = 0; j < 2; j++){
 		for(let i = 0; i < 5; i++) {
-		cards.push(new Card (startingX, startingY, cardfaceArray[0] ));
-		startingX += 150;
+			const faceImage = selectedFaces.pop();
+			cards.push(new Card (startingX, startingY, cardfaceArray[0] ));
+			startingX += 150;
 	}
 		startingY += 190;
 		startingX = 100;
