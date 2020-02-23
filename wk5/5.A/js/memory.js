@@ -90,5 +90,16 @@ class Card{
 		}
 		this.showCard();
 	}
+	function shuffleArray (array){
+		let counter = array.length;
+		while (counter > 0) {
+			const idx = Math.floor(Math.random() * counter);
+			counter --;
+			const temp = array[counter];
+			array[counter] = array[idx];
+			array[idx] = temp;
+		}
+		return array;
+	}
 }
 
