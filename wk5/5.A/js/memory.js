@@ -31,6 +31,7 @@ function setup(){
 		//removed the used cardface
 		cardfaceArray.splice(randomIdx, 1);
 	}
+	selectedFaces = shuffleArray(selectedFaces);
 	for (let j = 0; j < 2; j++){
 		for(let i = 0; i < 5; i++) {
 			const faceImage = selectedFaces.pop(); 
@@ -90,7 +91,8 @@ class Card{
 		}
 		this.showCard();
 	}
-	function shuffleArray (array){
+}
+function shuffleArray (array) {
 		let counter = array.length;
 		while (counter > 0) {
 			const idx = Math.floor(Math.random() * counter);
@@ -101,5 +103,4 @@ class Card{
 		}
 		return array;
 	}
-}
 
