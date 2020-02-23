@@ -4,7 +4,11 @@ let startingX = 100;
 let startingY = 60;
 let cards =[];
 const gameState = {
-
+	totalPairs: 0,
+	flippedCards: [],
+	numMatched: 0,
+	attempts: 0,
+	waiting: false
 }
 let cardfaceArray =[];
 let cardback;
@@ -46,8 +50,9 @@ function setup(){
 
 function mousePressed(){
 	for (let k = 0; k < cards.length; k++) {
-		if(cards[k].didHit(mouseX, mouseY)){
+		if(gameState.flippedCards.length < 2 && cards[k].didHit(mouseX, mouseY)){
 			console.log('flipped', cards[k]);
+			gameState.flippedCards.push(cards[k]);
 		}
 	}
 }
@@ -60,17 +65,18 @@ class Card{
 		this.height = 175;
 		this.face = DOWN;
 		this.cardFaceImg = cardfaceImg;
+		this.isMatch = false;
 		this.showCard();
 	}
 	showCard(){ 
-		if(this.face === DOWN){
-			fill('#fff');
-			rect(this.x, this.y, this.width, this.height);
-			image(cardback, this.x, this.y);
-		} else{
+		if(this.face === UP || this.isMatch){
 			fill('#c3c3c3');
 			rect(this.x, this.y, this.width, this.height);
 			image(this.cardFaceImg, this.x, this.y);
+		} else{
+			fill('#fff');
+			rect(this.x, this.y, this.width, this.height);
+			image(cardback, this.x, this.y);
 		}
 		
 	}
