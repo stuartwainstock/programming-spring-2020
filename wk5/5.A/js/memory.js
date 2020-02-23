@@ -33,8 +33,8 @@ function setup(){
 	}
 	for (let j = 0; j < 2; j++){
 		for(let i = 0; i < 5; i++) {
-			const faceImage = selectedFaces.pop();
-			cards.push(new Card (startingX, startingY, cardfaceArray[0] ));
+			const faceImage = selectedFaces.pop(); 
+			cards.push(new Card (startingX, startingY, faceImage));
 			startingX += 150;
 	}
 		startingY += 190;
