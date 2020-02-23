@@ -57,7 +57,7 @@ function draw (){
 	}
 	for (let k = 0; k < cards.length; k++){
 		if(!cards[k].isMatch){
-			card[k].face = DOWN;
+			card[k].faceImage = DOWN;
 		}
 		cards[k].show();
 	}
