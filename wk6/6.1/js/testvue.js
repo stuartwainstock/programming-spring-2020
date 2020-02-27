@@ -1,7 +1,7 @@
 new Vue({
 	el: '#myApp',
 	data: {
-		message: 'Hello World!',
+		msg: 'Hello World!',
 		location: 'United States',
 		viewIsAwesome: true
 	}
