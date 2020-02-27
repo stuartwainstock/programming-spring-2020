@@ -10,6 +10,7 @@
 		<h1>{{header}}</h1>
 		<ul>
 			<li v-for="item in items">{{ item }}</li>
+			<li v-if="noLlamaFacts === true">No Llamas</li>
 		</ul>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
