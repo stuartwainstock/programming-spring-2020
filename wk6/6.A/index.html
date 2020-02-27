@@ -7,10 +7,10 @@
 </head>
 <body>
 	<div id="llama">
-		<h1>{{msg}}</h1>
-		<h4>This week I'm in the {{location}}</h4>
-		<p v-if="viewIsAwesome===true">Vue is Awesome</p>
-		<p v-else>Vue is not interesting</p>
+		<h1>{{header}}</h1>
+		<ul>
+			<li v-for="item in items">{{ item }}</li>
+		</ul>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript" src="js/llamas.js"></script>

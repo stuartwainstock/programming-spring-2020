@@ -1,6 +1,9 @@
 body{
-	background-color: #82fc64;
+	background-color: #101010;
 }
-h1, h4, p{
-	color: #800a9e;
+h1, li, p{
+	color: #7FDBFF;
+}
+li{
+	text-transform: lowercase;
 }
