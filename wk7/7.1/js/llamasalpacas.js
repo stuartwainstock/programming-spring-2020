@@ -26,8 +26,13 @@ new Vue({
 		 'Alpaca mothers will always have their offspring in the morning',
 		 'Female alpacas have an 11 month pregnancy period and in 90% of the cases, do not need help in delivering their offspring',
 		 'Alpacas were domesticated by the Incas more than 6,000 years ago',
-		 'Alpaca fiber is a lot like a sheep’s wool but it is much warmer and not as itchy'
+		 'Alpaca fiber is a lot like the wool of a sheep but it is much warmer and not as itchy'
 		],
-		alpacaUrl: "https://en.wikipedia.org/wiki/Alpaca"
+		alpacaUrl: "https://en.wikipedia.org/wiki/Alpaca",
+		fancyHeader: {
+		  color: "#006",
+		  border: "5px dashed #006",
+		  width: "400px"
+		}
 	}
 });
