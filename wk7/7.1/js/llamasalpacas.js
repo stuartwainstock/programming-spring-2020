@@ -32,7 +32,8 @@ new Vue({
 		fancyHeader: {
 		  color: "#006",
 		  border: "5px dashed #006",
-		  width: "400px"
-		}
+		  width: "400px",
+		},
+		llamaPower: true
 	}
 });

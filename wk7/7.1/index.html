@@ -7,17 +7,21 @@
 </head>
 <body>
 	<div v-cloak id="myApp">
-		<h1 :style="fancyHeader">{{llamaHeader}}</h1>
+		<div :class="{favoriteAnimal: llamaPower === true}">
+			<h1 :style="fancyHeader">{{llamaHeader}}</h1>
 
-		<p><a :href="llamaUrl" target="_blank">Llama Wikipedia for more info</a></p>
-		<ul>
-			<li v-for="llama in llamas">{{ llama }}</li>
-		</ul>
-		<h1 :style="fancyHeader">{{alpacaHeader}}</h1>
-		<p><a :href="alpacaUrl" target="_blank" >Alpaca Wikipedia for more info</a></p>
-		<ul>
-			<li v-for="alpaca in alpacas">{{ alpaca }}</li>
-		</ul>
+			<p><a :href="llamaUrl" target="_blank">Llama Wikipedia for more info</a></p>
+			<ul>
+				<li v-for="llama in llamas">{{ llama }}</li>
+			</ul>
+		</div>
+		<div id="alpacas" :class="{favoriteAnimal: llamaPower === false}">
+			<h1 :style="fancyHeader">{{alpacaHeader}}</h1>
+			<p><a :href="alpacaUrl" target="_blank" >Alpaca Wikipedia for more info</a></p>
+			<ul>
+				<li v-for="alpaca in alpacas">{{ alpaca }}</li>
+			</ul>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript" src="js/llamasalpacas.js"></script>
