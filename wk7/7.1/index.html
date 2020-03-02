@@ -7,10 +7,16 @@
 </head>
 <body>
 	<div v-cloak id="myApp">
-		<h1>{{msg}}</h1>
-		<h4>This week I'm in the {{location}}</h4>
-		<p v-if="viewIsAwesome===true">Vue is Awesome</p>
-		<p v-else>Vue is not interesting</p>
+		<h1>{{llamaHeader}}</h1>
+		<p><a :href="llamaUrl" target="_blank">Llama Wikipedia for more info</a></p>
+		<ul>
+			<li v-for="llama in llamas">{{ llama }}</li>
+		</ul>
+		<h1>{{alpacaHeader}}</h1>
+		<p><a :href="alpacaUrl" target="_blank">Alpaca Wikipedia for more info</a></p>
+		<ul>
+			<li v-for="alpaca in alpacas">{{ alpaca }}</li>
+		</ul>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript" src="js/llamasalpacas.js"></script>
