@@ -11,12 +11,9 @@
       <div class="list-container">
         <div class="list-head">
           <span class="rank">Rank</span>
+           <span class="name">Name</span>
           <ul>
-          	<li v-for="value in llamas" :key="value.rank"> {{ value.rank }}</li>
-          </ul>
-          <span class="name">Name</span>
-          <ul>
-          	<li v-for="value in llamas" :key="value.name"> {{ value.name }}</li>
+          	<li v-for="value in llamas" :key="value.rank" :style="{ 'background-color': altRow }"> {{ value.rank }} {{ value.name }}</li>
           </ul>
         </div>
       </div>
