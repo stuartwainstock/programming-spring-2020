@@ -14,11 +14,10 @@
           <span class="name">Name</span>
         </div>
       <div class="list-container"  v-for="(llama, index) in llamas" 
-             :class="{odd: index % 2 === 0}">
+             :class="{altRow: index % 2 === 0}">
         <div class="list-head">
           <span class="rank">{{ llama.rank }}</span>
            <span class="name">{{ llama.name }}</span>
-         
         </div>
       </div>
 	</div>
@@ -26,3 +25,7 @@
 	<script type="text/javascript" src="js/llamalist.js"></script>
 </body>
 </html>
+
+ <ul>
+            <li v-for="value in llamas" :key="value.rank" :style="{ 'background-color': altRow }">  </li>
+          </ul>
