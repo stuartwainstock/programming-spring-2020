@@ -8,14 +8,17 @@
 <body>
 	<div v-cloak id="llama-list">
 		 <h1 class="llama-list-title">What to name your next llama</h1>
+     <div class="list-container">
+        <div class="list-head">
+          <span class="rank">Rank</span>
+          <span class="name">Name</span>
+        </div>
       <div class="list-container"  v-for="(llama, index) in llamas" 
-             v-bind:class="{odd: index % 2 === 0}">
+             :class="{odd: index % 2 === 0}">
         <div class="list-head">
           <span class="rank">{{ llama.rank }}</span>
            <span class="name">{{ llama.name }}</span>
-          <!--<ul>
-          	<li v-for="value in llamas" :key="value.rank" :style="{ 'background-color': altRow }">  </li>
-          </ul>-->
+         
         </div>
       </div>
 	</div>
