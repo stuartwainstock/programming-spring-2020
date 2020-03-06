@@ -22,3 +22,11 @@ html {
 .altRow{
   background: #7FDBFF;
 }
+/* styling all that have "llama" in here */
+.myStyle {
+  font-weight: bold;
+  padding: 0.2em;
+}
+ul.list-head{
+  padding-left: 0 !important;
+}

@@ -15,10 +15,11 @@
         </div>
       <div class="list-container"  v-for="(llama, index) in llamas" 
              :class="{altRow: index % 2 === 0}">
-        <div class="list-head">
-          <span class="rank">{{ llama.rank }}</span>
-           <span class="name">{{ llama.name }}</span>
-        </div>
+        <ul class="list-head">
+            <li class="rank"> {{llama.rank}}</li>
+            <!-- adding toLowerCase to target all "llama"s, & creating myStyle to customize 'them -->
+            <li class="name" v-bind:class="{myStyle: llama.name.toLowerCase().includes('llama')}"> {{ llama.name }}</li>
+          </ul>
       </div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
