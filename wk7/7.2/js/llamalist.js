@@ -48,6 +48,6 @@ var vm = new Vue({
   el: "#llama-list",
   data: {
     llamas: llamaArray,
-    altRow: '#7FDBFF',
+    
   }
 })

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Spring 2020 7.A Show and Tell Collection</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div v-cloak id="bird-list">
+		 <h1 class="bird-list-title">Types of Birds</h1>
+     <div class="list-container">
+        <div class="list-head">
+          <span class="commonName">Common Name</span>
+          <span class="name">Name</span>
+        </div>
+      <div class="list-container"  v-for="(birds, index) in birds" 
+             :class="{altRow: index % 2 === 0}">
+        <ul class="list-head">
+            <li class="commonName"> {{bird.commonName}}</li>
+            <!-- adding toLowerCase to target all "bird"s, & creating myStyle to customize 'them -->
+            <li class="name" v-bind:class="{myStyle: bird.name.toLowerCase().includes('bird')}"> {{ bird.name }}</li>
+          </ul>
+      </div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="js/showtell.js"></script>
+</body>
+</html>
