@@ -16,12 +16,19 @@ html {
 body {
 	font-family: montserrat, arial, verdana;
 }
+ul{
+	list-style-type: none;
+}
 
 /*form styles*/
+legend{
+	background: #fff;
+    text-align: center;
+    padding: 0 10px;
+}
 #fanform {
 	width: 400px;
 	margin: 50px auto;
-	text-align: center;
 	position: relative;
 }
 #fanform fieldset {
@@ -31,19 +38,18 @@ body {
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	width: 80%;
+	width: 100%;
 	margin: 0 10%;
 	
 	/*stacking fieldsets above each other*/
 	position: relative;
 }
-/*Hide all except first fieldset*/
-#fanform fieldset:not(:first-of-type) {
-	display: none;
+.state{
+	padding: 20px 0;
 }
 /*inputs*/
 #fanform input, #fanform textarea {
-	padding: 15px;
+	padding: 5px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin-bottom: 10px;

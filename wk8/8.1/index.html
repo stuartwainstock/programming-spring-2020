@@ -22,9 +22,11 @@
       	<label for="streetAddress">Street Address</label>
 		<input type="text" name="streetAddress" id="streetAddress" v-model="streetAddress">
       </div>
-      <div>
+      <div class="state">
       	<label for="state">State</label>
-			<select name="state" id="state" v-model="state"></select>
+			<select name="state" id="state" v-model="state">
+				<option v-for="state in availStates" :value="state.value" >{{state.name}}</option>
+			</select>
       </div>
       <div>
       	<label for="country">Country</label>
@@ -32,9 +34,14 @@
       </div>
       <div class="alpacaColors">
       	<p>Favorite Alpaca Colors</p>
-      	<div><label for="">Color
-      			<checkbox></checkbox>
-      		</label>
+      	<div>
+			<ul>
+				<li v-for="color in colors">
+					<label :for="color.value"> {{color.name}}
+	      				<input type="checkbox" name="" :value="color.value" :id="color.value" v-model="selectedColors">
+      				</label>
+      			</li>
+			</ul>
       	</div>
       </div>
       <div>
@@ -57,7 +64,7 @@
 			<p>Street Address: {{ streetAddress }}</p>
 			<p>State: {{ state }}</p>
 			<p>Country: {{ country }}</p>
-			<p>Favorite Alpaca Colors: {{ favAlpacaColor }}</p>
+			<p>Favorite Alpaca Colors: {{ selectedColors }}</p>
 			<p>Currect Alpaca Status: {{ currentAlpacaStatus }} </p>
 		</div>
 	</div>
