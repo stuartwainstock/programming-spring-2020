@@ -8,7 +8,7 @@ const vm = new Vue({
 	},
 	methods: {
 		calculate: (num1, num2) => {
-			switch (vm.operation) {
+			switch(vm.operation){
 				case 'Addition':
 					vm.total = num1 + num2;
 					break;
