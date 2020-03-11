@@ -6,7 +6,7 @@ new Vue({
 		streetAddress: "",
 		state: "",
 		country: "",
-		favAlpacaColor: "",
-		currentAlpacaStatus: "",
+		favAlpacaColor: [],
+		currentAlpacaStatus: ""
 	}
 });
