@@ -16,6 +16,7 @@ html {
 body {
 	font-family: montserrat, arial, verdana;
 }
+
 /*form styles*/
 #fanform {
 	width: 400px;
@@ -74,6 +75,4 @@ body {
 	color: #2C3E50;
 	margin-bottom: 10px;
 }
-
-
 
