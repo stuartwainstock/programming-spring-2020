@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Spring 2020 8.1 Form Binding</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div v-cloak id="myApp">
+    <fieldset>
+      <legend>Alpaca Fan Club Registration Form</legend>
+      <div>
+        <label class="label" for="name">First Name</label>
+        <input type="text" name="name" id="name" required="" v-model="firstName">
+        <label class="label" for="name">Last Name</label>
+        <input type="text" name="name" id="name" required="" v-model="lastName">
+      </div>
+     
+    </fieldset>
+  </form>
+		<div>
+			<strong>Output</strong>
+			<p>First Name: {{ firstName }}</p>
+			<p>Last Name: {{ lastName}}</p>
+			<p>Street Address: {{ streetAddress }}</p>
+			<p>State: {{ state }}</p>
+			<p>Country: {{ country }}</p>
+			<p>Favorite Alpaca Colors: {{ favAlpacaColor }}</p>
+			<p>Currect Alpaca Status: {{ currentAlpacaStatus }} </p>
+		</div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="js/formbinding.js"></script>
+</body>
+</html>

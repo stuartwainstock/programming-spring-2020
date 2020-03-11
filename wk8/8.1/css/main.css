@@ -1,0 +1,15 @@
+[v-cloak] {
+  display: none;
+}
+#myApp{
+	margin: 20px;
+}
+.favoriteAnimal{
+	background-color: #ECECEC;
+	width: 1000px;
+	padding: 20px;
+}
+#alpacas{
+	padding-left: 20px;
+}
+
