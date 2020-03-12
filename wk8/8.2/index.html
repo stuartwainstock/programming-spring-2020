@@ -7,24 +7,26 @@
 </head>
 <body>
 	<div v-cloak id="simplecalculator">
-	 <form>
+	 <form id="wrapper">
     <div>
       <input v-model.number="firstNumber" type="number" placeholder="First Number">
-        <select v-model="operation">
-          <option value="Addition">&#43;</option>
-          <option value="Subtraction">&#8722;</option>
-          <option value="Multiplication">&#215;</option>
-          <option value="Division">&#247;</option>
+        <select id="select-css" v-model="operation">
+          <option class="numbersize" value="Addition">&#43;</option>
+          <option class="numbersize" value="Subtraction">&#8722;</option>
+          <option class="numbersize" value="Multiplication">&#215;</option>
+          <option class="numbersize" value="Division">&#247;</option>
         </select>
          <input v-model.number="secondNumber" type="number" placeholder="Second Number">
     </div>
     <button v-on:click="calculate(firstNumber, secondNumber)" type="button">Calculate</button> 
-   </form>
-   <div>
+
+    <div id="output">
      <h3>Output</h3>
      <p>Operation: {{ operation }}</p>
      <p>Total: {{ total }}</p>
    </div>
+   </form>
+   
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
