@@ -18,7 +18,7 @@
         </select>
          <input v-model.number="secondNumber" type="number" placeholder="Second Number">
     </div>
-    <button :click="calculate(firstNumber, secondNumber)" type="button">Calculate</button> 
+    <button v-on:click="calculate(firstNumber, secondNumber)" type="button">Calculate</button> 
    </form>
    <div>
      <h3>Output</h3>
@@ -27,7 +27,7 @@
    </div>
 	</div>
 	
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 	<script type="text/javascript" src="js/simplecalc.js"></script>
 </body>
 </html>
