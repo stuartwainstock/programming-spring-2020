@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+[v-cloak] {
+  display: none;
+}
+html {
+  font-family: 'Roboto Slab', serif;
+}
+.bird-list-title {
+  border-bottom: 2px solid #333;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 400;
+}
+.list-container {
+  border-bottom: 1px solid #333;
+  padding: 5px;
+}
+.altRow{
+  background: #7FDBFF;
+}
+li{
+ list-style-type: none;
+}

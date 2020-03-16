@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Spring 2020 8.A Show and Tell Collection Add Remove</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div v-cloak id="bird-list">
+		 <h1 class="bird-list-title">Types of Birds</h1>
+     <div class="list-container">
+        <table>
+      <tr>
+        <th>Common Name</th>
+        <th>Latin Name</th>
+        <th>Family</th>
+        <th>About</th>
+        <th>Actions</th>
+      </tr>
+      <tr v-for="(birds, index) in birds" :class="{altRow: index % 2 === 0}">
+        <td class="commonName">{{birds.commonName}}</td>
+        <td class="latinName">{{ birds.latinName }}</td>
+        <td class="family">{{ birds.family }}</td>
+        <td class="description">{{ birds.description }}</td>
+        <td class="actions"><button type="button" v-on:click="deleteItem(birds)">Delete</button></td>
+      </tr>
+    </table>
+	</div>
+  <form v-on:submit.prevent="submitHandler">
+    <fieldset>
+      <legend>Add Bird to Collection</legend>
+      <div>
+        <label for="common-name">Common Name</label>
+        <input id="common-name" type="text" v-model="newBirdObj.commonName">
+      </div>
+      <div>
+        <label for="latin-name">Latin Name</label>
+        <input id="latin-name" type="text" v-model="newBirdObj.latinName">
+      </div>
+      <div>
+        <label for="family">Family</label>
+        <input id="family" type="text" v-model="newBirdObj.family">
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <input id="description" type="text" v-model="newBirdObj.description">
+      </div>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="js/showtell.js"></script>
+</body>
+</html>
