@@ -9,19 +9,30 @@
 	<div v-cloak id="bird-list">
 		 <h1 class="bird-list-title">Types of Birds</h1>
      <div class="list-container">
-        <div class="list-head">
-          <span class="commonName">Common Name</span>
-          <span class="name">Name</span>
-        </div>
-      <div class="list-container"  v-for="(birds, index) in birds" 
-             :class="{altRow: index % 2 === 0}">
-        <ul class="list-head">
-            <li class="commonName"> {{bird.commonName}}</li>
-            <!-- adding toLowerCase to target all "bird"s, & creating myStyle to customize 'them -->
-            <li class="name" v-bind:class="{myStyle: bird.name.toLowerCase().includes('bird')}"> {{ bird.name }}</li>
+        <table>
+      <tr>
+        <th>Common Name</th>
+        <th>Latin Name</th>
+        <th>Family</th>
+        <th>About</th>
+      </tr>
+      <tr v-for="(birds, index) in birds" :class="{altRow: index % 2 === 0}">
+        <td class="commonName">{{birds.commonName}}</td>
+        <td class="latinName">{{ birds.latinName }}</td>
+        <td class="family">{{ birds.family }}</td>
+        <td class="description">{{ birds.description }}</td>
+      </tr>
+    </table>
+      <!--<div class="list-container"  >
+       <ul class="list-head">
+            <li class="commonName"> {{birds.commonName}}</li>
+           <li class="latinName"> {{ birds.latinName }}</li>
+           <li class="family"> {{ birds.family }}</li>
+           <li class="description"> {{ birds.description }}</li>
           </ul>
-      </div>
+      </div>-->
 	</div>
+</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript" src="js/showtell.js"></script>
 </body>

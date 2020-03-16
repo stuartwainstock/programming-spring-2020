@@ -22,6 +22,9 @@ html {
 .altRow{
   background: #7FDBFF;
 }
+li{
+ list-style-type: none;
+}
 /* styling all that have "bird" in here */
 .myStyle {
   font-weight: bold;
