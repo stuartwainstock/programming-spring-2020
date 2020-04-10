@@ -1,0 +1,450 @@
+[
+    {
+        "rank":1,
+        "title":"The Box",
+        "artist":"Roddy Ricch",
+        "cover":"https://charts-static.billboard.com/img/2019/12/roddy-ricch-eqp-the-box-2k7-53x53.jpg",
+        "position":{
+            "positionLastWeek":1,"peakPosition":1,"weeksOnChart":12
+        }
+    },
+    {
+        "rank":2,
+        "title":"Life Is Good",
+        "artist":"Future Featuring Drake",
+        "cover":"https://charts-static.billboard.com/img/2020/01/future-tsu-life-is-good-rko-53x53.jpg",
+        "position":{
+            "positionLastWeek":2,"peakPosition":2,"weeksOnChart":7
+        }
+    },
+    {
+        "rank":3,
+        "title":"After Hours",
+        "artist":"The Weeknd",
+        "cover":"https://charts-static.billboard.com/img/2011/11/the-weeknd-gvx-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":null,"peakPosition":3,"weeksOnChart":1
+            }
+    },
+    {
+        "rank":4,
+        "title":"Blinding Lights",
+        "artist":"The Weeknd",
+        "cover":"https://charts-static.billboard.com/img/2019/12/the-weeknd-pqn-blinding-lights-gfd-53x53.jpg",
+        "position"
+        :{"positionLastWeek":10,"peakPosition":4,"weeksOnChart":11}
+    },
+    {
+        "rank":5,
+        "title":"Intentions",
+        "artist":"Justin Bieber Featuring Quavo",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position":
+            {
+                "positionLastWeek":3,"peakPosition":3,"weeksOnChart":3
+            }
+    },
+    {
+        "rank":6,
+        "title":"Roxanne",
+        "artist":"Arizona Zervas",
+        "cover":"https://charts-static.billboard.com/img/2019/11/arizona-zervas-egt-roxanne-5y8-53x53.jpg",
+        "position"
+        :{"positionLastWeek":9,"peakPosition":1,"weeksOnChart":17}
+    },
+    {
+        "rank":7,
+        "title":"Dance Monkey",
+        "artist":"Tones And I",
+        "cover":"https://charts-static.billboard.com/img/2019/08/tones-and-i-e8g-dance-monkey-945-53x53.jpg",
+        "position"
+        :{"positionLastWeek":7,"peakPosition":4,"weeksOnChart":19}
+    },
+    {
+        "rank":8,
+        "title":"Lil Top",
+        "artist":"YoungBoy Never Broke Again",
+        "cover":"https://charts-static.billboard.com/img/2017/06/youngboy-never-broke-again-cu3-53x53.jpg",
+        "position"
+        :{"positionLastWeek":null,"peakPosition":8,"weeksOnChart":1}
+    },
+    {
+        "rank":9,
+        "title":"High Fashion",
+        "artist":"Roddy Ricch Featuring Mustard",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position":
+            {
+                "positionLastWeek":8,"peakPosition":3,"weeksOnChart":8
+            }
+    },
+    {
+        "rank":10,
+        "title":"Don't Start Now",
+        "artist":"Dua Lipa",
+        "cover":"https://charts-static.billboard.com/img/2019/11/dua-lipa-5k0-dont-start-now-7wb-53x53.jpg",
+        "position"
+        :{"positionLastWeek":12,"peakPosition":10,"weeksOnChart":10}
+    },
+    {
+        "rank":11,
+        "title":"Dior",
+        "artist":"Pop Smoke",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position"
+        :{"positionLastWeek":31,"peakPosition":11,"weeksOnChart":2}
+    },
+    {
+        "rank":12,
+        "title":"ON",
+        "artist":"BTS",
+        "cover":"https://charts-static.billboard.com/img/2013/06/bts-4i5-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":null,"peakPosition":12,"weeksOnChart":1
+            }
+    },
+    {
+        "rank":13,
+        "title":"Ballin'",
+        "artist":"Mustard & Roddy Ricch",
+        "cover":"https://charts-static.billboard.com/img/2019/07/mustard-000-ballin-3hx-53x53.jpg",
+        "position"
+        :{"positionLastWeek":14,"peakPosition":6,"weeksOnChart":24}
+    },
+    {
+        "rank":14,
+        "title":"Circles",
+        "artist":"Post Malone",
+        "cover":"https://charts-static.billboard.com/img/2019/09/post-malone-tp6-circles-sb0-53x53.jpg",
+        "position"
+        :{"positionLastWeek":15,"peakPosition":2,"weeksOnChart":26}
+    },
+    {
+        "rank":15,
+        "title":"Falling",
+        "artist":"Trevor Daniel",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position"
+        :{"positionLastWeek":13,"peakPosition":11,"weeksOnChart":14}
+    },
+    {
+        "rank":16,
+        "title":"Yummy",
+        "artist":"Justin Bieber",
+        "cover":"https://charts-static.billboard.com/img/2020/01/justin-bieber-4oh-yummy-vs5-53x53.jpg",
+        "position"
+        :{"positionLastWeek":4,"peakPosition":2,"weeksOnChart":8}
+    },
+    {
+        "rank":17,
+        "title":"Red Eye",
+        "artist":"YoungBoy Never Broke Again",
+        "cover":"https://charts-static.billboard.com/img/2017/06/youngboy-never-broke-again-cu3-53x53.jpg",
+        "position"
+        :{"positionLastWeek":null,"peakPosition":17,"weeksOnChart":1}
+    },
+    {
+        "rank":18,
+        "title":"BOP",
+        "artist":"DaBaby",
+        "cover":"https://charts-static.billboard.com/img/2019/10/dababy-sfn-bop-3fy-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":17,"peakPosition":2,"weeksOnChart":21
+            }
+    },
+    {
+        "rank":19,
+        "title":"everything i wanted",
+        "artist":"Billie Eilish",
+        "cover":"https://charts-static.billboard.com/img/2019/11/billie-eilish-acb-everything-i-wanted-mj1-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":16,"peakPosition":2,"weeksOnChart":14
+            }
+    },
+    {
+        "rank":20,
+        "title":"Godzilla",
+        "artist":"Eminem Featuring Juice WRLD",
+        "cover":"https://charts-static.billboard.com/img/2020/02/eminem-c16-godzilla-r12-53x53.jpg",
+        "position"
+        :{"positionLastWeek":18,"peakPosition":3,"weeksOnChart":6}
+    },
+    {
+        "rank":21,
+        "title":"Woah",
+        "artist":"Lil Baby",
+        "cover":"https://charts-static.billboard.com/img/2019/11/lil-baby-nwx-woah-h7f-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":21,"peakPosition":1,"weeksOnChart":16
+            }
+    },
+    {
+        "rank":22,
+        "title":"Numbers",
+        "artist":"A Boogie Wit da Hoodie Featuring Roddy Ricch, Gunna & London On Da Track",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position":
+            {
+                "positionLastWeek":5,"peakPosition":5,"weeksOnChart":2
+            }
+    },
+    {
+        "rank":23,
+        "title":"Sum 2 Prove",
+        "artist":"Lil Baby",
+        "cover":"https://charts-static.billboard.com/img/2017/11/lil-baby-nwx-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":22,"peakPosition":3,"weeksOnChart":7
+            }
+    },
+    {
+        "rank":24,
+        "title":"Blueberry Faygo",
+        "artist":"Lil Mosey",
+        "cover":"https://charts-static.billboard.com/img/2018/09/lil-mosey-j5a-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":25,"peakPosition":24,"weeksOnChart":3
+            }
+    },
+    {
+        "rank":25,
+        "title":"Someone You Loved",
+        "artist":"Lewis Capaldi",
+        "cover":"https://charts-static.billboard.com/img/2019/03/lewis-capaldi-s2h-someone-you-loved-em0-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":19,"peakPosition":7,"weeksOnChart":34
+            }
+    },
+    {
+        "rank":26,
+        "title":"Say So",
+        "artist":"Doja Cat",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position"
+        :{"positionLastWeek":46,"peakPosition":26,"weeksOnChart":3}
+    },
+    {
+        "rank":27,
+        "title":"Memories",
+        "artist":"Maroon 5",
+        "cover":"https://charts-static.billboard.com/img/2019/09/maroon-5-vhb-memories-cnj-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":23,"peakPosition":16,"weeksOnChart":20
+            }
+    },
+    {
+        "rank":28,
+        "title":"Fine By Time",
+        "artist":"YoungBoy Never Broke Again",
+        "cover":"https://charts-static.billboard.com/img/2020/02/youngboy-never-broke-again-cu3-fine-by-time-jak-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":null,"peakPosition":28,"weeksOnChart":1
+            }
+    },
+    {
+        "rank":29,
+        "title":"10,000 Hours",
+        "artist":"Dan + Shay & Justin Bieber",
+        "cover":"https://charts-static.billboard.com/img/2019/10/dan-shay-aqf-10000-hours-e1h-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":20,"peakPosition":3,"weeksOnChart":18
+            }
+    },
+    {
+        "rank":30,
+        "title":"HIGHEST IN THE ROOM",
+        "artist":"Travis Scott",
+        "cover":"https://charts-static.billboard.com/img/2019/10/travis-scott-jll-highest-in-the-room-1tw-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":24,"peakPosition":1,"weeksOnChart":21
+            }
+    },
+    {
+        "rank":31,
+        "title":"No Time To Die",
+        "artist":"Billie Eilish",
+        "cover":"https://charts-static.billboard.com/img/2020/02/billie-eilish-acb-no-time-to-die-doo-53x53.jpg",
+        "position"
+        :{"positionLastWeek":6,"peakPosition":6,"weeksOnChart":2}
+    },
+    {
+        "rank":32,
+        "title":"Adore You",
+        "artist":"Harry Styles",
+        "cover":"https://charts-static.billboard.com/img/2019/12/harry-styles-psx-adore-you-n45-53x53.jpg",
+        "position"
+        :{"positionLastWeek":33,"peakPosition":23,"weeksOnChart":10}
+    },
+    {
+        "rank":33,
+        "title":"Knocked Off",
+        "artist":"YoungBoy Never Broke Again",
+        "cover":"https://charts-static.billboard.com/img/2017/06/youngboy-never-broke-again-cu3-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":null,"peakPosition":33,"weeksOnChart":1
+            }
+    },
+    {
+        "rank":34,
+        "title":"Bad Bad",
+        "artist":"YoungBoy Never Broke Again",
+        "cover":"https://charts-static.billboard.com/img/2017/06/youngboy-never-broke-again-cu3-53x53.jpg",
+        "position"
+        :{"positionLastWeek":null,"peakPosition":34,"weeksOnChart":1}
+    },
+    {
+        "rank":35,
+        "title":"Hot Girl Bummer",
+        "artist":"blackbear",
+        "cover":"https://charts-static.billboard.com/img/2019/09/blackbear-nbm-hot-girl-bummer-nvt-53x53.jpg",
+        "position"
+        :{"positionLastWeek":28,"peakPosition":27,"weeksOnChart":18}
+    },
+    {
+        "rank":36,
+        "title":"You should be sad",
+        "artist":"Halsey",
+        "cover":"https://charts-static.billboard.com/img/2020/01/halsey-iqm-you-should-be-sad-gqk-53x53.jpg",
+        "position"
+        :{"positionLastWeek":35,"peakPosition":23,"weeksOnChart":7}
+    },
+    {
+        "rank":37,
+        "title":"My Oh My",
+        "artist":"Camila Cabello Featuring DaBaby",
+        "cover":"https://charts-static.billboard.com/img/2019/12/camila-cabello-p0o-my-oh-my-7oy-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":30,"peakPosition":25,"weeksOnChart":9
+            }
+    },
+    {
+        "rank":38,
+        "title":"Bandit",
+        "artist":"Juice WRLD & YoungBoy Never Broke Again",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position":
+            {
+                "positionLastWeek":32,"peakPosition":1,"weeksOnChart":21
+            }
+    },
+    {
+        "rank":39,
+        "title":"Go Stupid",
+        "artist":"Polo G Featuring NLE Choppa & Stunna 4 Vegas",
+        "cover":"https://www.billboard.com/assets/1585328969/images/charts/bb-placeholder-new.jpg?4118ff5c23d0f1304dc5",
+        "position":
+            {
+                "positionLastWeek":29,"peakPosition":29,"weeksOnChart":2
+            }
+    },
+    {
+        "rank":40,
+        "title":"Suicidal",
+        "artist":"YNW Melly & Juice WRLD",
+        "cover":"https://charts-static.billboard.com/img/2019/12/ynw-melly-000-suicidal-ptj-53x53.jpg",
+        "position"
+        :{"positionLastWeek":27,"peakPosition":11,"weeksOnChart":12}
+    },
+    {
+        "rank":41,
+        "title":"Sunflower (Spider-Man: Into The Spider-Verse)",
+        "artist":"Post Malone & Swae Lee",
+        "cover":"https://charts-static.billboard.com/img/2018/10/post-malone-tp6-sunflower-spiderman-into-the-spiderverse-knj-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":36,"peakPosition":1,"weeksOnChart":70
+            }
+    },
+    {
+        "rank":42,
+        "title":"The Bones",
+        "artist":"Maren Morris",
+        "cover":"https://charts-static.billboard.com/img/2019/03/maren-morris-knd-the-bones-u43-53x53.jpg",
+        "position"
+        :{"positionLastWeek":42,"peakPosition":42,"weeksOnChart":5}
+    },
+    {
+        "rank":43,
+        "title":"Heartless",
+        "artist":"The Weeknd",
+        "cover":"https://charts-static.billboard.com/img/2019/12/the-weeknd-qji-heartless-6te-53x53.jpg",
+        "position"
+        :{"positionLastWeek":null,"peakPosition":2,"weeksOnChart":9}
+    },
+    {
+        "rank":44,
+        "title":"OUT WEST",
+        "artist":"JACKBOYS Featuring Young Thug",
+        "cover":"https://charts-static.billboard.com/img/2020/01/jackboys-000-out-west-v6q-53x53.jpg",
+        "position"
+        :{"positionLastWeek":41,"peakPosition":11,"weeksOnChart":8}
+    },
+    {
+        "rank":45,
+        "title":"Bad Guy",
+        "artist":"Billie Eilish",
+        "cover":"https://charts-static.billboard.com/img/2019/04/billie-eilish-acb-bad-guy-7mt-53x53.jpg",
+        "position"
+        :{"positionLastWeek":37,"peakPosition":2,"weeksOnChart":47}
+    },
+    {
+        "rank":46,
+        "title":"Old Town Road",
+        "artist":"Lil Nas X Featuring Billy Ray Cyrus",
+        "cover":"https://charts-static.billboard.com/img/2019/03/lil-nas-x-zl6-old-town-road-4gg-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":39,"peakPosition":1,"weeksOnChart":50
+            }
+    },
+    {
+        "rank":47,
+        "title":"Forever",
+        "artist":"Justin Bieber Featuring Post Malone & Clever",
+        "cover":"https://charts-static.billboard.com/img/2020/02/justin-bieber-4oh-forever-tyd-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":11,"peakPosition":11,"weeksOnChart":2
+            }
+    },
+    {
+        "rank":48,
+        "title":"WHATS POPPIN",
+        "artist":"Jack Harlow",
+        "cover":"https://charts-static.billboard.com/img/2020/02/jack-harlow-ft9-whats-poppin-ddu-53x53.jpg",
+        "position"
+        :{"positionLastWeek":null,"peakPosition":48,"weeksOnChart":1}
+    },
+    {
+        "rank":49,
+        "title":"RIP Lil Phat",
+        "artist":"YoungBoy Never Broke Again",
+        "cover":"https://charts-static.billboard.com/img/2020/03/youngboy-never-broke-again-cu3-rip-lil-phat-9rv-53x53.jpg",
+        "position":
+            {
+                "positionLastWeek":null,"peakPosition":49,"weeksOnChart":1
+            }
+    },
+    {
+        "rank":50,
+        "title":"Moral Of The Story",
+        "artist":"Ashe",
+        "cover":"https://charts-static.billboard.com/img/2020/03/ashe-000-moral-of-the-story-hfp-53x53.jpg",
+        "position"
+        :{"positionLastWeek":null,"peakPosition":50,"weeksOnChart":1}
+    }
+]
