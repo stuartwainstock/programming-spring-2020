@@ -24,13 +24,13 @@ html{
     margin: 10px 0;
 }
 .track.no-change{
-    border-color: blue;
+    border-color: #011E3F;
 }
 .track.up{
-    border-color: green;
+    border-color: #3D9970;
 }
 .track.down{
-    border-color: red;
+    border-color: #FF4135;
 }
 .track h3{
     padding: 0;
