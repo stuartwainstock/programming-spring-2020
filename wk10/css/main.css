@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
+html{
+    font-family: 'Oswald';
+}
 
 [v-cloak] {
   display: none;
@@ -18,6 +21,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 10px 0;
+}
+.track.no-change{
+    border-color: blue;
+}
+.track.up{
+    border-color: green;
+}
+.track.down{
+    border-color: red;
+}
+.track h3{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
 }
 .track img {
     width: 100%;
