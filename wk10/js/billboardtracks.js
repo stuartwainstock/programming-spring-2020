@@ -1,3 +1,7 @@
+Vue.component('streaming-track', {
+	template: `<div class="track"> </div> `
+});
+
 const vm = new Vue({
 	el: '#billboardApp',
 	data: {
@@ -8,7 +12,7 @@ const vm = new Vue({
 			.get('./json/music-list.json')
 			.then(response => {
 				console.log('response', response);
-				vm.track = response.data;
+				vm.tracks = response.data;
 				console.log(vm.tracks);
 			});
 	}
