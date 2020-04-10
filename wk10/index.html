@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Programming Spring 2020 8.2 Simple Calculator</title>
-
+	<title>Programming Spring 2020 wk10 AXIOS JSON </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
-	<div v-cloak id="simplecalculator">
-	 <form id="wrapper">
-    <div>
-      <h1>Simple Calculator</h1>
-      <input v-model.number="firstNumber" type="number" placeholder="First Number">
-        <select id="select-css" v-model="operation">
-          <option class="numbersize" value="Addition">&#43;</option>
-          <option class="numbersize" value="Subtraction">&#8722;</option>
-          <option class="numbersize" value="Multiplication">&#215;</option>
-          <option class="numbersize" value="Division">&#247;</option>
-        </select>
-         <input v-model.number="secondNumber" type="number" placeholder="Second Number">
-    </div>
-    <button v-on:click="calculate(firstNumber, secondNumber)" type="button">Calculate</button> 
-
-    <div id="output">
-     <h3>Output</h3>
-     <p>Operation: {{ operation }}</p>
-     <p>Total: {{ total }}</p>
-   </div>
-   </form>
-   
-	</div>
-	
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-	<script type="text/javascript" src="js/simplecalc.js"></script>
+<body v-cloak >
+      <h1>Billboard Top Stream Tracks</h1>
+      <div id="billboard">
+        
+      </div>
+	<script type="text/javascript" src="js/billboardtracks.js"></script>
 </body>
 </html>
