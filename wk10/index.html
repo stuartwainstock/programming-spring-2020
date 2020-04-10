@@ -8,7 +8,7 @@
 </head>
 <body>
       <h1>Billboard Top Stream Tracks</h1>
-      <div v-cloak id="billboardApp">
+      <div v-cloak id="billboardApp" class="track-wrapper">
         <streaming-track :track="song" v-for="song in tracks"></streaming-track>
       </div>
 	<script type="text/javascript" src="js/billboardtracks.js"></script>
