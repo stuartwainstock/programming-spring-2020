@@ -3,7 +3,8 @@ Vue.component('streaming-track', {
 		<h3> {{track.title}} </h3>
 		<div> <img :src="track.cover" alt=""> </div>
 		<small>{{track.artist}}</small>
-	</div> `
+	</div>`,
+	props: ['track']
 });
 
 const vm = new Vue({
