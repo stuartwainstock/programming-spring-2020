@@ -8,11 +8,12 @@
 </head>
 <body>
       <h1>QUOTES on DESIGN</h1>
-      <small>Curated by Chris Coyier <href src="https://quotesondesign.com/api/" target="_blank">API</href></small>
+      <small>Curated by Chris Coyier <a href="https://quotesondesign.com/api/" target="_blank">API</a></small>
       <div v-cloak id="designQuotesApp" class="track-wrapper">
         <!--<streaming-track :track="song" v-for="song in tracks"></streaming-track>-->
-        <design-quotes></design-quotes>
+        <design-quotes v-for="quote in quotes"></design-quotes>
       </div>
 	<script type="text/javascript" src="js/designquotes.js"></script>
 </body>
 </html>
+

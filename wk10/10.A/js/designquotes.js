@@ -1,8 +1,8 @@
 Vue.component('design-quotes', {
-	template: `<div v-bind:class="['track', trending]"> 
-		<h3> {{quote.content}} </h3>
+	template: `<div v-bind:class="['quote']"> 
+		<h3> {{quote.excerpt.rendered}} </h3>
 		<div> <p :src="quote.link"></p> </div>
-		<small>{{quote.title}}</small>
+		<small>{{quote.title.rendered}}</small>
 	</div>`,
 	props: ['quote'],
 	// computed: {
