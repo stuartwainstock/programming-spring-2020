@@ -1,9 +1,8 @@
-let brew = [];
-
 Vue.component('brewery-deets', {
-template: `<div v-bind:class="['brew']"> 
+	template: `<div v-bind:class="['brew']"> 
 		<h3> {{brew.name}} </h3>
- 		<div> <p :src="brew.website_url"></p> </div>
+		<p> {{brew.city}}, {{brew.state}} </p>
+ 		<div> <p :src="brew.website_url">{{brewery.website_url}}</p> </div>
  		<small>{{brew.brewery_type}}</small>
  	</div>`,
  	props: ['brew']
@@ -12,18 +11,16 @@ template: `<div v-bind:class="['brew']">
 
 const vm = new Vue({
 	el: '#breweryApp',
-	data () {
-		return {
-			name: null
-		}
+	data: {
+		breweries: [] 
 	},
 	mounted () {
 		axios
-			.get('./json/brewery.json')
+			.get('https://api.openbrewerydb.org/breweries/search?query=monster')
 			.then(response => {
 				console.log('response', response);
-				vm.brew = response.data;
-				console.log(vm.brew);
+				vm.breweries = response.data;
+				console.log(vm.breweries);
 			});
 	}
 });

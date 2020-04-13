@@ -10,7 +10,7 @@
       <h1>Open Brewery Database</h1>
       <small><a href="https://www.openbrewerydb.org/" target="_blank">Here is the API.</a></small>
       <div v-cloak id="breweryApp" class="track-wrapper">
-        <brewery-deets v-for="brewery in brew"></brewery-deets>
+        <brewery-deets v-bind:brew="brewery" v-for="brewery in breweries"></brewery-deets>
       </div>
 	<script type="text/javascript" src="js/monsterbrewery.js"></script>
 </body>
