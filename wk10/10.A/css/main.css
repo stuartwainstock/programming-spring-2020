@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
 
 html{
-    font-family: 'Oswald';
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 [v-cloak] {
   display: none;
 }
-.track-wrapper{
+.brewery-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.track{
-    width: 144px;
+.brew{
+    width: 200px;
     border: 3px solid black;
     text-align: center;
     padding: 10px;
@@ -23,21 +23,8 @@ html{
     justify-content: space-between;
     margin: 10px 0;
 }
-.track.no-change{
-    border-color: #011E3F;
-}
-.track.up{
-    border-color: #3D9970;
-}
-.track.down{
-    border-color: #FF4135;
-}
-.track h3{
+.brew h3{
     padding: 0;
     margin: 0;
     font-size: 14px;
-}
-.track img {
-    width: 100%;
-    max-width: 53px;
 }

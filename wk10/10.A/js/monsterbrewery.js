@@ -2,7 +2,7 @@ Vue.component('brewery-deets', {
 	template: `<div v-bind:class="['brew']"> 
 		<h3> {{brew.name}} </h3>
 		<p> {{brew.city}}, {{brew.state}} </p>
- 		<div> <p :src="brew.website_url">{{brewery.website_url}}</p> </div>
+ 		<div> <p :src="brew.website_url">{{brew.website_url}}</p> </div>
  		<small>{{brew.brewery_type}}</small>
  	</div>`,
  	props: ['brew']
