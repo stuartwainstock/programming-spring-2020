@@ -7,13 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-      <h1>QUOTES on DESIGN</h1>
-      <small>Curated by Chris Coyier <a href="https://quotesondesign.com/api/" target="_blank">API</a></small>
-      <div v-cloak id="designQuotesApp" class="track-wrapper">
-        <!--<streaming-track :track="song" v-for="song in tracks"></streaming-track>-->
-        <design-quotes v-for="quote in quotes"></design-quotes>
+      <h1>Open Brewery Database</h1>
+      <small><a href="https://www.openbrewerydb.org/" target="_blank">Here is the API.</a></small>
+      <div v-cloak id="breweryApp" class="track-wrapper">
+        <brewery-deets v-for="brewery in brew"></brewery-deets>
       </div>
-	<script type="text/javascript" src="js/designquotes.js"></script>
+	<script type="text/javascript" src="js/monsterbrewery.js"></script>
 </body>
 </html>
 
