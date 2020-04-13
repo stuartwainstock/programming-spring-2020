@@ -7,10 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div class="head">
       <h1>Open Brewery Database</h1>
       <p><i>Listing of breweries with the word monster in them.</i></p>
       <small><a href="https://www.openbrewerydb.org/" target="_blank">Here is the API.</a></small>
-      <div v-cloak id="breweryApp" class="track-wrapper">
+     </div>
+      <div v-cloak id="breweryApp" class="brewery-wrapper">
         <brewery-deets v-bind:brew="brewery" v-for="brewery in breweries"></brewery-deets>
       </div>
 	<script type="text/javascript" src="js/monsterbrewery.js"></script>

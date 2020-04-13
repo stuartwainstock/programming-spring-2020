@@ -20,11 +20,14 @@ html{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10px 0;
 }
 .brew h3{
     padding: 0;
     margin: 0;
     font-size: 14px;
+}
+.head{
+    text-align: center;
 }
