@@ -3,7 +3,7 @@ Vue.component('brewery-deets', {
 		<h3> {{brew.name}} </h3>
 		<p> {{brew.city}}, {{brew.state}} </p>
  		<div> <p :src="brew.website_url">{{brew.website_url}}</p> </div>
- 		<small>{{brew.brewery_type}}</small>
+ 		<small>Brewery Type: {{brew.brewery_type}}</small>
  	</div>`,
  	props: ['brew']
 
