@@ -3,7 +3,7 @@ let x = 0;
 let num = 16;
 
 function setup() {
-  createCanvas(720, 360);
+  createCanvas(720, 460);
   background('#33f365');
   noStroke();
 
