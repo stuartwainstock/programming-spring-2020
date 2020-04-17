@@ -1,4 +1,5 @@
 let y;
+let x = 0;
 let num = 16;
 
 function setup() {
@@ -25,7 +26,7 @@ function setup() {
   }
   y = 20;
   for (let i = 0; i < num + 6; i++) {
-    square(y, y, 55, y, 15, 30, 5);
+    square(y, y, 30, y, 15, 30, 5);
     y += 20;
   }
   y = 45;
@@ -34,4 +35,21 @@ function setup() {
     rect(120, y, 40, 1);
     y += 40;
   }
+  y = 70;
+  fill('#e0d04f');
+  for (let i = 0; i < num + 1; i++) {
+    rect(350, y + 4, 30, 3);
+    y += 40;
+  }
+}
+function draw (){
+	fill('#c60897')
+  	ellipse(x, height/3, 50, 50);
+  	x ++;
+  }
+function mousePressed() {
+  loop();
+}
+function mouseReleased() {
+  noLoop();
 }
