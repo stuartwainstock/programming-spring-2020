@@ -3,18 +3,18 @@ function preload(){
 }
 
 function setup(){
-  let cnv = createCanvas(500,500);
+  let cnv = createCanvas(700,700);
   cnv.mouseClicked(togglePlay);
   fft = new p5.FFT();
   sound.amp(0.3);
 }
 
 function draw(){
-  background('#d61530');
+  background('#cae7e0');
 
   let spectrum = fft.analyze();
   noStroke();
-  fill('#21e7cc');
+  fill('#381a21');
   for (let i = 0; i< spectrum.length; i++){
     let x = map(i, 0, spectrum.length, 0, width);
     let h = -height + map(spectrum[i], 0, 255, height, 0);
@@ -24,7 +24,7 @@ function draw(){
   let waveform = fft.waveform();
   noFill();
   beginShape();
-  stroke('#21e7cc');
+  stroke('#381a21');
   for (let i = 0; i < waveform.length; i++){
     let x = map(i, 0, waveform.length, 0, width);
     let y = map( waveform[i], -1, 1, 0, height);
@@ -33,7 +33,8 @@ function draw(){
   endShape();
 
   textSize(32);
-  fill('#21e7cc');
+  noStroke();
+  fill('#381a21');
   text('click to play', 40, 20);
 }
 
