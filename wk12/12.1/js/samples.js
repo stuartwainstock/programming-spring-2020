@@ -35,7 +35,8 @@ function draw(){
   textSize(32);
   noStroke();
   fill('#381a21');
-  text('click to play', 40, 20);
+  textFont('Roboto');
+  text('click to play', 80, 80);
 }
 
 function togglePlay() {
