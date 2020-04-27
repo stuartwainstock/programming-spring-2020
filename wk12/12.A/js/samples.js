@@ -1,5 +1,6 @@
 let synth, soundLoop;
  let notePattern = [90, 100, 110, 120, 130, 140];
+ let cnv;
 
  function preload() {
   // set the global sound formats
@@ -13,6 +14,7 @@ let synth, soundLoop;
  function setup() {
    let cnv = createCanvas(500, 500);
    cnv.mousePressed(canvasPressed);
+
    colorMode(HSB);
    background(0, 0, 86);
    text('RoBoT bEaTs', 10, 20);
@@ -26,7 +28,12 @@ let synth, soundLoop;
 
    synth = new p5.MonoSynth();
 
-   
+  
+}
+function draw() {
+  if (keyIsPressed === true) {
+    mySound.play();
+  } 
 }
 
 function canvasPressed() {
