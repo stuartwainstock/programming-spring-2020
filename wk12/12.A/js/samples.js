@@ -4,10 +4,11 @@ let synth, soundLoop;
 
  function preload() {
   // set the global sound formats
-  soundFormats('mp3', 'ogg');
+  soundFormats('mp3');
 
-  // load either beatbox.mp3, or .ogg, depending on browser
-  mySound = loadSound('sounds/robotmachine.mp3');
+  // load esound
+  mySoundA = loadSound('sounds/robotmachine.mp3');
+  mySoundB = loadSound('sounds/spooky.mp3');
 }
 
 
@@ -31,9 +32,12 @@ let synth, soundLoop;
   
 }
 function draw() {
-  if (keyIsPressed === true) {
-    mySound.play();
-  } 
+   if (key === 'a') {
+     mySoundA.play();
+  } else if (key === 'b') {
+     mySoundB.play();
+  }
+ 
 }
 
 function canvasPressed() {
