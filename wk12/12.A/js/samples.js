@@ -1,17 +1,17 @@
 let synth, soundLoop;
- let notePattern = [60, 62, 64, 67, 69, 72];
+ let notePattern = [90, 100, 110, 120, 130, 140];
 
  function setup() {
-   let cnv = createCanvas(100, 100);
+   let cnv = createCanvas(200, 200);
    cnv.mousePressed(canvasPressed);
    colorMode(HSB);
    background(0, 0, 86);
-   text('tap to start/stop', 10, 20);
+   text('RoBoT bEaTs', 10, 20);
 
    //the looper's callback is passed the timeFromNow
    //this value should be used as a reference point from
    //which to schedule sounds
-   let intervalInSeconds = 0.2;
+   let intervalInSeconds = 0.5;
    soundLoop = new p5.SoundLoop(onSoundLoop, intervalInSeconds);
 
    synth = new p5.MonoSynth();
