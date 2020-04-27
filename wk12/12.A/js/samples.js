@@ -1,48 +1,37 @@
-function preload(){
-  sound = loadSound('sounds/activation.mp3');
+let synth, soundLoop;
+ let notePattern = [60, 62, 64, 67, 69, 72];
+
+ function setup() {
+   let cnv = createCanvas(100, 100);
+   cnv.mousePressed(canvasPressed);
+   colorMode(HSB);
+   background(0, 0, 86);
+   text('tap to start/stop', 10, 20);
+
+   //the looper's callback is passed the timeFromNow
+   //this value should be used as a reference point from
+   //which to schedule sounds
+   let intervalInSeconds = 0.2;
+   soundLoop = new p5.SoundLoop(onSoundLoop, intervalInSeconds);
+
+   synth = new p5.MonoSynth();
 }
 
-function setup(){
-  let cnv = createCanvas(700,700);
-  cnv.mouseClicked(togglePlay);
-  fft = new p5.FFT();
-  sound.amp(0.3);
-}
+function canvasPressed() {
+  // ensure audio is enabled
+  userStartAudio();
 
-function draw(){
-  background('#cae7e0');
-
-  let spectrum = fft.analyze();
-  noStroke();
-  fill('#381a21');
-  for (let i = 0; i< spectrum.length; i++){
-    let x = map(i, 0, spectrum.length, 0, width);
-    let h = -height + map(spectrum[i], 0, 255, height, 0);
-    rect(x, height, width / spectrum.length, h )
-  }
-
-  let waveform = fft.waveform();
-  noFill();
-  beginShape();
-  stroke('#381a21');
-  for (let i = 0; i < waveform.length; i++){
-    let x = map(i, 0, waveform.length, 0, width);
-    let y = map( waveform[i], -1, 1, 0, height);
-    vertex(x,y);
-  }
-  endShape();
-
-  textSize(32);
-  noStroke();
-  fill('#381a21');
-  textFont('Roboto');
-  text('click to play', 80, 80);
-}
-
-function togglePlay() {
-  if (sound.isPlaying()) {
-    sound.pause();
+  if (soundLoop.isPlaying) {
+    soundLoop.stop();
   } else {
-    sound.loop();
+    // start the loop
+    soundLoop.start();
   }
+}
+
+function onSoundLoop(timeFromNow) {
+  let noteIndex = (soundLoop.iterations - 1) % notePattern.length;
+  let note = midiToFreq(notePattern[noteIndex]);
+  synth.play(note, 0.5, timeFromNow);
+  background(noteIndex * 360 / notePattern.length, 50, 100);
 }
