@@ -1,12 +1,22 @@
 let synth, soundLoop;
  let notePattern = [90, 100, 110, 120, 130, 140];
 
+ function preload() {
+  // set the global sound formats
+  soundFormats('mp3', 'ogg');
+
+  // load either beatbox.mp3, or .ogg, depending on browser
+  mySound = loadSound('sounds/robotmachine.mp3');
+}
+
+
  function setup() {
-   let cnv = createCanvas(200, 200);
+   let cnv = createCanvas(500, 500);
    cnv.mousePressed(canvasPressed);
    colorMode(HSB);
    background(0, 0, 86);
    text('RoBoT bEaTs', 10, 20);
+
 
    //the looper's callback is passed the timeFromNow
    //this value should be used as a reference point from
@@ -15,6 +25,8 @@ let synth, soundLoop;
    soundLoop = new p5.SoundLoop(onSoundLoop, intervalInSeconds);
 
    synth = new p5.MonoSynth();
+
+   
 }
 
 function canvasPressed() {
@@ -28,6 +40,7 @@ function canvasPressed() {
     soundLoop.start();
   }
 }
+
 
 function onSoundLoop(timeFromNow) {
   let noteIndex = (soundLoop.iterations - 1) % notePattern.length;
