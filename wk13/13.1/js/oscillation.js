@@ -1,19 +1,19 @@
-var angle = 0;
+var angle = 1;
 
 function setup() { 
-  createCanvas(500, 500);
+  createCanvas(1000, 1000);
   background('#135d13');
 } 
 
 function draw() { 
   
-  var x = map(cos(angle),-1,1,0,width);
-  var y = map(sin(angle),-1,1,0,height);
+  var x = map(cos(angle),-1,2,1,width);
+  var y = map(sin(angle),-1,2,2,height);
   stroke('#e99fe9');
   line(200, 200,x,y);
   fill('#e99fe9');
   stroke('#135d13');
-  ellipse(x,y,20,20);
+  rect(x,y,20,20);
   
-  angle += 0.02; 
+  angle += 0.03; 
 }
