@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Spring 2020 14.A Foreign exchange rates </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="head">
+      <h1>Foreign exchange rates API with currency conversion</h1>
+      <p><i>Exchange rates API is a free service for current and historical foreign exchange rates published by the European Central Bank</i></p>
+      <small><a href="https://exchangeratesapi.io/" target="_blank">Here is the API.</a></small>
+     </div>
+      <div v-cloak id="currencyApp" class="currency-wrapper">
+        <currency-trend v-bind:currency="currency" v-for="currency in currencies"></currency-trend>
+      </div>
+	<script type="text/javascript" src="js/currencydata.js"></script>
+</body>
+</html>
+
