@@ -1,8 +1,8 @@
 Vue.component('currency-trend', {
 	template: `<div v-bind:class="['currency']"> 
-		<h3> Current Rate: {{currency.rates}} </h3>
-		<p> {{currency.rates}}, {{currency.base}} </p>
- 		<!--<small>Country of Currency: {{currency.rates.2020-01-02.USD}}</small>-->
+		<h3> Current Rate: {{currency.base}} </h3>
+		<p> JPY, {{currency.JPY}} </p>
+ 		<small>Country of Currency: {{currency}}</small>
  	</div>`,
  	props: ['currency']
 
@@ -15,7 +15,7 @@ const vm = new Vue({
 	},
 	mounted () {
 		axios
-			.get('https://api.exchangeratesapi.io/history?start_at=2020-01-01&end_at=2020-05-01&base=USD')
+			.get('https://api.exchangeratesapi.io/2010-01-12')
 			.then(response => {
 				console.log('response', response);
 				vm.currencies = response.data;
