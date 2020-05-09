@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Programming Spring 2020 14.A Foreign exchange rates </title>
+	<title>Programming Spring 2020 14.A Random Beer Generator</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<div class="head">
-      <h1>Foreign exchange rates API with currency conversion</h1>
-      <p><i>Exchange rates API is a free service for current and historical foreign exchange rates published by the European Central Bank</i></p>
-      <small><a href="https://exchangeratesapi.io/" target="_blank">Here is the API.</a></small>
+      <h1>Random Beer Generator</h1>
+      <p><i>The Punk API takes Brewdog's DIY Dog and turns it into a searchable, filterable API that's completely free and open source.</i></p>
+      <small><a href="https://punkapi.com/" target="_blank">Here is the API.</a></small>
      </div>
-      <div v-cloak id="currencyApp" class="currency-wrapper">
-        <currency-trend v-bind:currency="currency" v-for="currency in currencies"></currency-trend>
+      <div v-cloak id="randomBeerApp" class="beer-wrapper">
+        <random-beer v-bind:beer="beer" v-for="beer in beers"></random-beer>
       </div>
-	<script type="text/javascript" src="js/currencydata.js"></script>
+	<script type="text/javascript" src="js/randombeer.js"></script>
 </body>
 </html>
 
