@@ -1,9 +1,9 @@
 Vue.component('random-beer', {
-	template: `<div v-bind:class="['beer']"> 
+	template: `<div v-bind:class="['randbeer']"> 
+		<img v-bind:src="beer.image_url" width="20%" />
 		<p>Name: {{beer.name}}</p>
-		<p>Tagline: {{beer.tagline}}</p>
-		<p>ABV: {{beer.abv}}</p>
-		<p>IBU: {{beer.ibu}}</p>
+		<p>ABV: {{beer.abv}} IBU: {{beer.ibu}}</p>
+		<p>Food Pairing: {{beer.food_pairing[0]}}</p>
  	</div>`,
  	props: ['beer']
 
