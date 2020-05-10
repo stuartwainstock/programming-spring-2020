@@ -7,6 +7,7 @@ Vue.component('random-beer', {
 		<p id="beername">{{beer.name}}</p>
 		<p id="beerABV"> {{beer.abv}} ABV</p>
 		<p id="beerPairing">Food Pairing: {{beer.food_pairing[0]}}</p>
+		<button onClick="window.location.reload();">Refresh Page</button>
  	</div>`,
  	props: ['beer']
 
@@ -34,6 +35,8 @@ function setup() {
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
 }
+
+//Inspired by https://editor.p5js.org/madebyemily/sketches
 
 function draw() {
   background('#00ACDD'); 
