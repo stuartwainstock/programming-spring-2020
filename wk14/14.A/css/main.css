@@ -2,6 +2,7 @@
 
 html{
     font-family: 'Chivo', sans-serif;
+    background-color: #fff;
 }
 
 [v-cloak] {
@@ -12,6 +13,7 @@ html{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 .beer-wrapper img{
     display: block;
@@ -26,6 +28,7 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     margin: 10px 0;
+    background-color: #03AFDB;
 }
 .randbeer h3{
     padding: 0;
@@ -43,7 +46,6 @@ html{
     font-size: 30px;
 }
 #beerPairing{
-    color: #707070;
     text-transform: uppercase;
     font-size: 20px;
 }
