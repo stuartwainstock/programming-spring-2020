@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap');
 
 html{
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Chivo', sans-serif;
 }
 
 [v-cloak] {
@@ -31,6 +31,21 @@ html{
     padding: 0;
     margin: 0;
     font-size: 14px;
+}
+#beername{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+}
+#beerABV{
+    color: #de0000;
+    font-size: 30px;
+}
+#beerPairing{
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 .head{
     text-align: center;
