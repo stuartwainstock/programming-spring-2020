@@ -27,8 +27,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 10px 0;
-    background-color: #03AFDB;
+    margin: 10px 0 10px 150px;
 }
 .randbeer h3{
     padding: 0;
